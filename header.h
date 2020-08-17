@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#define NB_MAX 500
+#define NB_MAX 5000
 
 #define HAUT 1
 #define DROITE 2

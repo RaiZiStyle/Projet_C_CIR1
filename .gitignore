@@ -1,2 +1,4 @@
 *.odt
 *.pdf
+Obj/*.o
+*.exe
