@@ -39,6 +39,7 @@ void remplissage_map(char **appart, int nb_colonne, int nb_ligne, FILE *fp, Robo
             if (ligne[j] == 'D') {
                 robot->pos_x = j;
                 robot->pos_y = i;
+                // printf("i: %d , j: %d\n", i, j);
             }
             appart[i][j] = ligne[j];
         }
@@ -78,11 +79,11 @@ void affiche_robot(Robot old_robot, Robot new_robot) {
     SaveCursorPosition();
 
     // Clear l'ancienne position
-    MoveCursorTo(old_robot.pos_x, old_robot.pos_y + 1);
+    MoveCursorTo(old_robot.pos_x, old_robot.pos_y);
     printf(".");
 
     //Affiche la nouvelle position
-    MoveCursorTo(new_robot.pos_x, new_robot.pos_y + 1);
+    MoveCursorTo(new_robot.pos_x, new_robot.pos_y);
     printf("R");
 
     fflush(stdout);

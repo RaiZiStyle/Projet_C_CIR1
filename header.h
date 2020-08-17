@@ -11,7 +11,7 @@
 #define BAS 3
 #define GAUCHE 4
 
-#define NORMAL_SPEED 100000000
+#define NORMAL_SPEED 100000
 
 #define MoveCursorTo(x, y) printf("\033[%d;%dH", y + 1, x + 1)
 #define SaveCursorPosition() printf("\033[s")

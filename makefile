@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=
+CFLAGS=-Wall
 LDFLAGS=$(shell sdl-config --libs) -lSDL_image
 OBJDIR=Obj
 EXEC=Robot.exe
